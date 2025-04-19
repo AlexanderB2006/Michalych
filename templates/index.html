@@ -2,33 +2,7 @@
 <html>
 <head>
     <title> Страница </title>
-    <style>
-    p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        color: brown
-    }
-    .img{
-        height: 200px;
-        width: 400px;
-    }
-    img{
-        height: 100%;
-        width: 100%;
-    }
-    .description{
-        color:blue
-    }
-    .x{
-        color:red
-    }
-    .container{
-        display:flex;
-        justify-content:center;
-        flex-direction:column;
-        align-items:center;
-    }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
@@ -36,9 +10,9 @@
             <h1>Кошки </h1>
         </div>
         <div>
-            <p class="description">Ко́шка (лат. Felis catus) — домашнее животное, одно из наиболее популярных[1]</p>
+            <p class="description">Ко́шка (лат. Felis catus) — домашнее животное, одно из наиболее популярных</p>
             <p> домашняя кошка — млекопитающее семейства кошачьих отряда хищных.</p>
-            <x> В настоящее время в мире насчитывается около 600 млн домашних кошек[9], выведено около 200 пород </x>
+            <x> В настоящее время в мире насчитывается около 600 млн домашних кошек, выведено около 200 пород </x>
         </div>
         <div>
         <div class="img">
@@ -50,7 +24,5 @@
             <button onClick="location.href='https://ru.wikipedia.org/wiki/Кошка'">подробнее</button>
             <a href ="https://ru.wikipedia.org/wiki/Кошка">все о кошках </a>
         </div>
-
 </body>
-
 </html>
